@@ -1,0 +1,92 @@
+11.n = int(input("Enter number: "))
+
+if n & 1:
+    print("Odd")
+else:
+    print("Even")
+
+
+
+
+12.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+print("After swapping:", a, b)
+
+
+
+13.n = int(input("Enter number: "))
+
+print("n << 1 =", n << 1)
+print("n >> 1 =", n >> 1)
+
+
+
+14.n = int(input("Enter number: "))
+k = int(input("Enter bit position: "))
+
+if n & (1 << k):
+    print("Bit is set")
+else:
+    print("Bit is not set")
+
+
+
+15.n = int(input("Enter number: "))
+count = 0
+
+while n:
+    count += n & 1
+    n >>= 1
+
+print("Set bits =", count)
+
+
+
+16.n = int(input("Enter number: "))
+
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+
+17.year = int(input("Enter year: "))
+
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+
+
+
+18.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+print("Largest =", max(a, b))
+
+
+
+19.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+print("Largest =", max(a, b, c))
+
+
+
+
+20.ch = input("Enter character: ").lower()
+
+if ch in "aeiou":
+    print("Vowel")
+else:
+    print("Consonant")
+
+
