@@ -1,0 +1,97 @@
+41.h = int(input("Enter hour: "))
+m = int(input("Enter minute: "))
+
+angle = abs(30*h - 5.5*m)
+angle = min(angle, 360-angle)
+
+print("Smaller angle =", angle)
+
+
+
+
+
+42.marks = float(input("Enter marks: "))
+attendance = float(input("Enter attendance: "))
+income = float(input("Enter family income: "))
+
+if marks >= 75 and attendance >= 75 and income <= 300000:
+    print("Eligible for scholarship")
+else:
+    print("Not eligible")
+
+
+43.n = int(input("Enter N: "))
+
+for i in range(1, n+1):
+    print(i)
+
+
+
+
+
+44.n = int(input("Enter N: "))
+
+for i in range(n, 0, -1):
+    print(i)
+
+
+
+
+45.n = int(input("Enter N: "))
+
+for i in range(2, n+1, 2):
+    print(i)
+
+
+
+46..n = int(input("Enter N: "))
+
+for i in range(1, n+1, 2):
+    print(i)
+
+
+
+
+47.n = int(input("Enter N: "))
+s = 0
+
+for i in range(1, n+1):
+    s += i
+
+print("Sum =", s)
+
+
+
+48..n = int(input("Enter number: "))
+count = 0
+
+while n:
+    count += 1
+    n //= 10
+
+print("Digits =", count)
+
+
+
+
+49.n = int(input("Enter number: "))
+s = 0
+
+while n:
+    s += n % 10
+    n //= 10
+
+print("Sum =", s)
+
+
+
+
+
+50.n = int(input("Enter number: "))
+rev = 0
+
+while n:
+    rev = rev*10 + n%10
+    n //= 10
+
+print("Reverse =", rev)
