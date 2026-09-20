@@ -1,0 +1,141 @@
+21.age = int(input("Enter age: "))
+
+if age < 5:
+    price = 0
+elif age <= 12:
+    price = 50
+elif age <= 60:
+    price = 100
+else:
+    price = 60
+
+print("Ticket price =", price)
+
+
+
+
+
+22.age = int(input("Enter age: "))
+
+if age < 13:
+    print("Child")
+elif age < 20:
+    print("Teenager")
+elif age < 60:
+    print("Adult")
+else:
+    print("Senior citizen")
+
+hour = int(input("Enter hour (0-23): "))
+
+
+
+
+23.if hour < 12:
+    print("Morning")
+elif hour < 17:
+    print("Afternoon")
+elif hour < 21:
+    print("Evening")
+else:
+    print("Night")
+
+
+
+
+24.user = input("Username: ")
+password = input("Password: ")
+
+if user == "admin" and password == "1234":
+    print("Login successful")
+else:
+    print("Invalid username or password")
+
+
+
+
+25.m = int(input("Enter marks: "))
+
+if m >= 90:
+    print("Grade A")
+elif m >= 80:
+    print("Grade B")
+elif m >= 70:
+    print("Grade C")
+elif m >= 60:
+    print("Grade D")
+else:
+    print("Grade F")
+
+
+
+
+26.n = int(input("Enter number (1-7): "))
+
+days = ["Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday", "Sunday"]
+
+if 1 <= n <= 7:
+    print(days[n-1])
+else:
+    print("Invalid number")
+
+
+
+
+
+27.units = int(input("Enter units: "))
+
+if units <= 100:
+    bill = units * 1
+elif units <= 200:
+    bill = 100 + (units-100)*2
+else:
+    bill = 300 + (units-200)*3
+
+print("Bill =", bill)
+
+
+
+
+28. a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
+
+if a == b == c:
+    print("Equilateral")
+elif a == b or b == c or a == c:
+    print("Isosceles")
+else:
+    print("Scalene")
+
+
+
+
+29.a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
+
+if a+b > c and a+c > b and b+c > a:
+    print("Valid triangle")
+else:
+    print("Invalid triangle")
+
+
+
+
+30.a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+op = input("Enter operator: ")
+
+if op == '+':
+    print(a+b)
+elif op == '-':
+    print(a-b)
+elif op == '*':
+    print(a*b)
+elif op == '/':
+    print(a/b)
+else:
+    print("Invalid operator")
+
