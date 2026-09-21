@@ -1,0 +1,97 @@
+81.n = int(input("Enter rows: "))
+
+for i in range(n, 0, -1):
+    print(" "*(n-i) + "*"*i)
+
+
+
+
+82.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+
+
+
+83.n = int(input("Enter rows: "))
+
+for i in range(n, 0, -1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+
+
+
+84.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+for i in range(n-1, 0, -1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+
+
+85.r = int(input("Enter rows: "))
+c = int(input("Enter columns: "))
+
+for i in range(r):
+    for j in range(c):
+        if i == 0 or i == r-1 or j == 0 or j == c-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+
+
+86.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        if j == 1 or j == i or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+
+
+87.n = int(input("Enter rows: "))
+
+for i in range(n, 0, -1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+for i in range(2, n+1):
+    print(" "*(n-i) + "*"*(2*i-1))
+
+
+
+
+88.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    print(str(i) * i)
+
+
+
+
+89.n = int(input("Enter rows: "))
+x = 1
+
+for i in range(1, n+1):
+    for j in range(i):
+        print(x, end="")
+        x += 1
+    print()
+
+
+
+90.n = int(input("Enter rows: "))
+x = 1
+
+for i in range(1, n+1):
+    for j in range(i):
+        print(x, end=" ")
+        x += 1
+    print()
