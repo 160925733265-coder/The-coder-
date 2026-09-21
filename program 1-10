@@ -1,0 +1,101 @@
+1.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+print("Sum =", a+b)
+print("Difference =", a-b)
+print("Product =", a*b)
+print("Quotient =", a/b)
+print("Remainder =", a%b)
+
+
+
+2.r = float(input("Enter radius: "))
+area = 3.14*r*r
+print("Area =", area)
+
+
+
+3.p = float(input("Enter P: "))
+r = float(input("Enter R: "))
+t = float(input("Enter T: "))
+
+si = (p*r*t)/100
+print("Simple Interest =", si)
+
+
+
+4.c = float(input("Enter Celsius: "))
+f = (c*9/5)+32
+print("Fahrenheit =", f)
+
+f = float(input("Enter Fahrenheit: "))
+c = (f-32)*5/9
+print("Celsius =", c)
+
+
+
+
+5.n = int(input("Enter number: "))
+
+if n%3 == 0 and n%5 == 0:
+    print("Divisible by both")
+elif n%3 == 0:
+    print("Divisible by 3")
+elif n%5 == 0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 3 or 5")
+
+
+
+6.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+if a > b:
+    print(a, "is greater")
+else:
+    print(b, "is greater")
+
+
+
+7.n = int(input("Enter number: "))
+
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+
+
+8.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+if a == b and b == c:
+    print("All are equal")
+else:
+    print("Not equal")
+
+
+
+9.age = int(input("Enter age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible")
+
+
+10.ch = input("Enter character: ")
+
+if ch.isupper():
+    print("Uppercase")
+elif ch.islower():
+    print("Lowercase")
+elif ch.isdigit():
+    print("Digit")
+else:
+    print("Special character")
