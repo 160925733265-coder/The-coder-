@@ -1,0 +1,118 @@
+71.n = int(input("Enter decimal number: "))
+b = ""
+
+if n == 0:
+    b = "0"
+
+while n:
+    b = str(n % 2) + b
+    n //= 2
+
+print("Binary =", b)
+
+
+
+72.b = input("Enter binary number: ")
+decimal = 0
+
+for digit in b:
+    decimal = decimal*2 + int(digit)
+
+print("Decimal =", decimal)
+
+
+
+73.n = int(input("How many numbers? "))
+s = 0
+
+for i in range(n):
+    x = float(input("Enter number: "))
+    s += x
+
+print("Count =", n)
+print("Average =", s/n)
+
+
+
+
+74.import math
+
+x = float(input("Enter x: "))
+n = int(input("Enter terms: "))
+s = 0
+
+for i in range(n):
+    p = 2*i + 1
+    term = x**p / math.factorial(p)
+
+    if i % 2 == 0:
+        s += term
+    else:
+        s -= term
+
+print("Sum =", s)
+
+
+
+
+75.def palindrome(s):
+    if len(s) <= 1:
+        return True
+    return s[0] == s[-1] and palindrome(s[1:-1])
+
+s = input("Enter string: ")
+
+if palindrome(s):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+
+
+76.def count_vowels(s):
+    if s == "":
+        return 0
+
+    if s[0].lower() in "aeiou":
+        return 1 + count_vowels(s[1:])
+    return count_vowels(s[1:])
+
+s = input("Enter string: ")
+print("Vowels =", count_vowels(s))
+
+
+
+
+77.def pattern(n, i=1):
+    if i > n:
+        return
+
+    print(i, end=" ")
+    pattern(n, i+1)
+    print(i, end=" ")
+
+n = int(input("Enter N: "))
+pattern(n)
+
+
+
+78.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    print("*" * i).
+
+
+
+79.n = int(input("Enter rows: "))
+
+for i in range(n, 0, -1):
+    print("*" * i)
+
+
+
+
+80.n = int(input("Enter rows: "))
+
+for i in range(1, n+1):
+    print(" "*(n-i) + "*"*i)
