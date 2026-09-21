@@ -1,0 +1,114 @@
+51.n = int(input("Enter number: "))
+temp = n
+rev = 0
+
+while n:
+    rev = rev*10 + n%10
+    n //= 10
+
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+52.n = int(input("Enter number: "))
+
+while n != 1 and n != 4:
+    s = 0
+    while n:
+        d = n % 10
+        s += d*d
+        n //= 10
+    n = s
+
+if n == 1:
+    print("Happy Number")
+else:
+    print("Not Happy Number")
+
+
+53.def product(n):
+    if n < 10:
+        return n
+    return (n % 10) * product(n//10)
+
+n = int(input("Enter number: "))
+print("Product =", product(n))
+
+
+
+
+54.n = int(input("Enter number: "))
+
+while n:
+    print(n % 10)
+    n //= 10
+
+
+55.n = int(input("Enter N: "))
+fact = 1
+
+for i in range(1, n+1):
+    fact *= i
+
+print("Factorial =", fact)
+
+
+
+56.n = int(input("Enter number: "))
+count = 0
+
+for i in range(1, n+1):
+    if n % i == 0:
+        count += 1
+
+if count == 2:
+    print("Prime")
+else:
+    print("Not Prime")
+
+
+
+57.n = int(input("Enter N: "))
+
+for x in range(2, n+1):
+    prime = True
+    for i in range(2, x):
+        if x % i == 0:
+            prime = False
+            break
+    if prime:
+        print(x)
+
+
+
+58.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+while b:
+    a, b = b, a % b
+
+print("GCD =", a)
+
+
+
+59.a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+x, y = a, b
+while y:
+    x, y = y, x % y
+
+lcm = (a*b)//x
+print("LCM =", lcm)
+
+
+
+
+60.n = int(input("Enter N: "))
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a+b
